@@ -10,7 +10,7 @@
 h1 {
   margin-left: 20px;
   color: blue;
-  font:200;
+  font:200%;
   }
 
 p {
@@ -23,5 +23,7 @@ p {
 
 #content {
   border-style: dotted;
+  background-color: skyblue;
+  font-size: 20px;
 
 }
