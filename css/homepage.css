@@ -2,5 +2,9 @@
 
 .cat-photo {
   margin: 10px;
+  max-width: 400px;
+}
+.my-portrait{
+  margin: 10px;
   max-width: 500px;
 }
