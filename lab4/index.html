@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 4 - Psuedocoding & Problem Solving</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,29 +23,90 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 4 - Psuedocoding & Problem Solving</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>Use pseudocode to set oup an outline for an everyday task and a simple computer game in the form of javascript comments.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
+					<p>In the tasks to create a javascript file, there was a direction to link it to an external website. however, even with directions I wasn't sure what I was supposed to do, 
+						so I left it alone. I figured that the line "<script type="text/javascript" src="./js/lab.js" DEFER></script>," which I think imports the javascript into this html file,
+						served that purpose. Now that I'm lookig at it now though, there probably is a proper way to link it in the javascript file. Something I will ask at a later date.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>While we went into this assignment slightly half heartedly and confused, I decided to make at least an effort to add on to the psuedocode, and make it 
+						somewhat structured like it should work in a python script. Of course, we are coding in java, so it's not the same. it'll have to be something I learn quickly
+						so as to prevent confusion in the future. 
+					</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<h3>Everyday Task: Morning Routine</h3> 
+					<ol>
+ 						<li>Check the clock for the current time.</li>
+							<ul><li>If an alarm was set, turn it off.</li></ul>
+						<li>Get out of bed, go to the bathroom.</li>
+							<ul><li>If you need to use the toilet, do so.</li></ul>
+							<ul><li>Once finished, flush the toilet.</li></ul>
+							<ul><li>Wash your hands in the sink with soap and water.</li></ul>
+						<li>Wash your face with water.</li>
+							<ul><li>If preferred, use a face wash formula as well.</li></ul>
+						<li>Dry off your face with a towel.</li>
+						<li>Brush your teeth for 1-2 minutes.</li>
+							<ul><li>Use toothpaste after rinsing your toothbrush</li></ul>
+							<ul><li>Spit into the sink, then rinse your mouth with water.</li></ul>
+							<ul><li>If needed, use mouthwash as well to rinse your mouth.</li></ul>
+						<li>If brushing/combing hair is necessary, do so with water or hair gel as needed.</li>
+						<li>Go to the dresser, choose your outdoor wear.</li>
+						<li>Change out of pajamas, put on chosen clothes.</li>
+						<li>Start the day.</li>
+					</ol>
+					<h3>Psuedocode: Hangman</h3>
+					<pre><code>
+//Psuedocode: Hangman
+  //Print a tree
+  //Create a constant variable word bank list
+    //add every letter of the alphabet to the list 
+  //Ask user to type in a word or ask computer to generate a word
+    //If generated, ask for user input in the form of a number of letters
+  //Loop through each letter in the generated word
+    //print "_" 
+    //append letter to an empty list "answer"
+  //ask for user input (letter)
+  //Loop through each letter in "answer"
+    //if user input is not in "answer," return incorrect
+    //if user input is in "answer," return correct
+  //if return incorrect, draw a piece of the man hanging form the tree (or subtrract a life from the life counter)
+    //print incorrect letters
+  //if return correct
+    //loop through "answer"
+      //for each time the user input is in answer, replace the dashes in the stringg with the letter intheir proper position
+  //check for win/lose condition
+    //if all lives are gone or head, body, arms, and legs of stickman on tree, Game over
+    //if all dashes are filled, the user wins
+  //ask if the user wants to play again or end the game
+					</code></pre>
+					<h3>Screenshots</h3>
+					<div id="output">
+						<img class="screenshots" src="./img/lab4java.jpg">
+						<p>Java file, including the psuedocode and a partial heading structure</p>
+						<img class="screenshots" src="./img/lab4html.jpg">
+						<p>HTML of this page (part 1)</p>
+						<img class="screenshots" src="./img/lab4html2.jpg">
+						<p>HTML of this page (part 2)</p>
+					</div>
 			</div>
 		</section>
 		<nav id="links">
-			<!-- Put links to other pages (including the homepage) here. -->
+			<a href="https://yacobjee.github.io/art101/">Homepage</a> 
+			<a href="https://yacobjee.github.io/art101/lab2">Lab 2</a>
+			<a href="https://yacobjee.github.io/art101/lab3">Lab 3</a>
+			<a href="https://yacobjee.github.io/art101/lab4">Lab 4</a>
 		</nav>
 	</main>
 </body>
