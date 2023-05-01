@@ -1,21 +1,27 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - An exercise of arrays and objects.
+// Author: Jacob Yee
+// Date: 4/30/2023
 
-// Constants
+// Variables
 
-// Functions
+var myTransport = ["Legs", "Bus", "Car", "Bike"];
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Objects
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+var myMainRide ={
+  make: "Honda",
+  model: "Taurus",
+  color: "Silver",
+  year: 2010,
+  age: function() {
+      return 2023 - this.year;
+  }
+};
 
-// let's get this party started
-main();
+// Output
+
+document.writeln("How I get around the place: " + myTransport + "<br>");
+
+document.writeln("The car I own and never use: <pre>",
+  JSON.stringify(myMainRide, null, '\t'), "</pre>"
+);
