@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 2 - HTML & CSS Starter</title>
+	<title>Lab 12 - Conditionals</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -17,36 +17,37 @@
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+	<script src="js/lab.js" defer></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab 2 - HTML & CSS Starter</h1>
+			<h1>Lab 12 - Conditionals</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>With a partner, create a basic HTML and CSS style file, editing and inspecting it according to guidelines.</p>
+					<p>Work with conditionals to create a Sorting Hat function that sorts inputted names into Hogwarts Houses based on the length of the name.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>Some misunderstandings happened while coding, as the use of shortcuts tripped up the process. 
-						Additionally, there were some difficulties in the CSS, only due to lack of familiarity. No # was placed in front of content, as I thought it would make it into a comment like in python. 
-						Task X was also difficult to complete as there needed to be changes to the indexes to link together the multiple labs, which wasn't done in advance. THerefore some searching was
-						needed to be done in order to learn how to link to other html files in the same repository.</p>
+					<p>Not many problems shwoed up, everything went pretty smoothly. Trying to add jquery in messed it up, most likely since having the .value is something different in jquery language. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>For my first taste of html in a long time, I honestly had a lot of fun with this. There were difficulties, but I'm glad I was able to work through them, 
-						and that my partner also helped me when there were some issues, and vice versa. I'm honestly curious as for what's to come, as while I didn't do a lot CSS-wise,
-						I want to see what I can do with more complicated things and when actual coding is involved.</p>
+					<p>This assignment went far more smoothly compared to the last one, most likely since I chose to not use jquery. 
+						There's also the fact that conditionals are something familiar, even if the format is a bit different than python's. 
+						Adding descriptions was also pretty simple, with the use of a second function making things pretty easy to add. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"><a href="https://yacobjee.github.io/art101/lab2/index2.html">Link to Result</a></div>
+					<p>Please enter your name for sorting.</p>
+					<input type="text" id="input">
+					<button id="button">Submit</button>
+					<div id="output"></div>
+					
 			</div>
 		</section>
 		<nav id="links">
