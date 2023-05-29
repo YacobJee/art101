@@ -36,11 +36,19 @@ function houseInfo(house) {
 }
 
 // create a click listener to the button in the html
-var myButton = document.getElementById("button");
-myButton.addEventListener("click", function() {
-  var name = document.getElementById("input").value;
+    //var myButton = document.getElementById("button");
+    //myButton.addEventListener("click", function() {
+      //var name = document.getElementById("input").value;
+      //var house = sortingHat(name);
+      //var info = houseInfo(house);
+      //newText = "<p>The Sorting Hat says: 'Better be..." + house + "</p>" + "<p>" + info + "</p>" + "<p>Descriptions adapted from Emma Thomas (Quora)</p>";
+      //document.getElementById("output").innerHTML = newText;
+    //})
+
+$("#myButton").click(function() {
+  var name = $("#input").val();
   var house = sortingHat(name);
   var info = houseInfo(house);
   newText = "<p>The Sorting Hat says: 'Better be..." + house + "</p>" + "<p>" + info + "</p>" + "<p>Descriptions adapted from Emma Thomas (Quora)</p>";
-  document.getElementById("output").innerHTML = newText;
+  $("#output").html(newText);
 })
