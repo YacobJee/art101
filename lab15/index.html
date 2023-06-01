@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab 13 - Loops</title>
+	<title>Lab 15 - AJAX</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -17,36 +17,39 @@
 	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
-	<script src="js/lab.js" DEFER></script>
+	<script src="./js/lab.js" DEFER></script>
 </head>
 <body>
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab 13 - Loops</h1>
+			<h1>Lab 15 - AJAX</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Work with for and while loops to create a FizzBuzz function, which iterates through the bnumbers 1-200.
-						If the number is a mul;tiple of 3, print "Fizz", 5 is "Buzz," and 7 is "Boom." If the nnumber is a combination 
-						of these factors, combine the printed statements into somehting like "Fizzbuzz."
-					</p>
+					<p>Work with AJAX and API's to create a button that prints an endpoint of the API in a div.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>Not many problems shwoed up, though I wasn't sure how to initialize the function with jquery. brandon helped me out witht hat, so now I know about document(ready).</p>
+					<p>Originally, Itired to use the pokemon API, but I got confused on how I should go about it, 
+						since I at first wanted to make a button that randomly generated a pokemon uopn being clicked. 
+						However, the way the API is organized confused me, so I switched gears to a simpler API.
+						 </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Reflection</h2>
-					<p>I didn't really put any extra effort beyond what was necessary, honestly just wanting to get this assingment done.
-						I'm glad to be working with loops again, though, as they're familiar. They're worded differently than in python, and in some cases a bit more troublesome to format.
-						I'm curious to see how jQuery can make looping through elements in an array easier. </p>
+					<p>I didn't put a lot of extra effort into this lab, though I can't say i didn't try with the pokemon API.
+						In hindsight, what I had to do was pretty simple, I just overcomplicated things and gave up.
+						If I had more time on my hands, i would like to try out the pokeAPI again, and make that orignal program I wanted to make. </p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+					<button id="activate">Press Me</button>
+					<div id="output">
+						
+					</div>
 			</div>
 		</section>
 		<nav id="links">
