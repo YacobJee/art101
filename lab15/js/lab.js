@@ -24,8 +24,8 @@ function getStuff() {
     success: function(data) {
         // do stuff
         console.log(data);
-        var value = data.value
-        $("#output").html("<h3>" + value)
+        var value = data.value;
+        $("#output").html("<h3>" + value);
 
     },
     // What we do if the api call fails
@@ -38,4 +38,4 @@ function getStuff() {
 }
 
 // attach an event listner tot eh button to use the function getStuff
-$("#activate").click(getStuff)
+$("#activate").click(getStuff);
